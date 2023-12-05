@@ -1,0 +1,40 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.row {
+    margin: -15px;
+}
+
+.col-md-6 {
+    padding: 15px;
+}
+
+video {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+#qualityOptions button {
+    margin-right: 10px;
+}
+
+/* Adjust modal width if needed */
+.modal-lg {
+    max-width: 80%;
+}
+#modalVideo {
+    min-width: 720px;
+    min-height: 480px; /* Adjust the height as needed */
+    width: 100%;
+    height: auto;
+}

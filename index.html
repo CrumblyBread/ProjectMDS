@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player Site</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Video.js CSS -->
+    <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <div class="row" id="videoPlayers">
+        </div>
+    </div>
+    <!--<div class="container mt-5">
+        <div class="row">
+            <div id="videoPlayers" class="col-md-6 col-xs-12">
+                 <video id="videoCam1" class="video-js video-cam1" width="400" poster="/thumbnails/cam1.png" controls>
+                    <source src="http://147.229.147.107/hls/cam1.m3u8" >
+                </video>
+            </div>
+            <div id="videoPlayers" class="col-md-6 col-xs-12">
+                <video id="videoCam2" class="video-js video-cam2" width="400" poster="/thumbnails/cam2.png" controls>
+                    <source src="http://147.229.147.107/hls/cam2.m3u8" >
+                </video>
+            </div>
+            <div id="videoPlayers" class="col-md-6 col-xs-12">
+                <video id="videoCam3" class="video-js video-cam3" width="400" poster="/thumbnails/cam3.png" controls>
+                    <source src="http://147.229.147.107/hls/cam3.m3u8" >
+                </video>
+            </div>
+            <div id="videoPlayers" class="col-md-6 col-xs-12">
+                <video id="videoCam4" class="video-js video-cam4" width="400" poster="/thumbnails/cam4.png" controls>
+                    <source src="http://147.229.147.107/hls/cam4.m3u8" >
+                </video> 
+            </div>
+        </div>
+    </div>-->
+
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <video id="modalVideo" class="video-js vjs-default-skin" controls width="100%"></video>
+                    <div id="qualityOptions" class="mt-3"></div>
+                    <div><p id="modalURL"></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Video.js JS -->
+    <script src="https://vjs.zencdn.net/7.14.3/video.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
