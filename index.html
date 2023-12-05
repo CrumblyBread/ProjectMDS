@@ -11,40 +11,28 @@
     <!-- Video.js CSS -->
     <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <!-- Mine CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="container mt-5">
-        <div class="row" id="videoPlayers">
+    <!-- header -->
+    <div class="header">
+        <div class="image">
+            <img src="logos/YouTube.png">
+        </div>
+        <H1>TvojeTrubka</H1>
+    </div>
+    <hr class="line">
+    
+    <!-- videos -->
+    <div class="content">
+        <div class="container mt-5">
+            <div class="row" id="videoPlayers">
+            </div>
         </div>
     </div>
-    <!--<div class="container mt-5">
-        <div class="row">
-            <div id="videoPlayers" class="col-md-6 col-xs-12">
-                 <video id="videoCam1" class="video-js video-cam1" width="400" poster="/thumbnails/cam1.png" controls>
-                    <source src="http://147.229.147.107/hls/cam1.m3u8" >
-                </video>
-            </div>
-            <div id="videoPlayers" class="col-md-6 col-xs-12">
-                <video id="videoCam2" class="video-js video-cam2" width="400" poster="/thumbnails/cam2.png" controls>
-                    <source src="http://147.229.147.107/hls/cam2.m3u8" >
-                </video>
-            </div>
-            <div id="videoPlayers" class="col-md-6 col-xs-12">
-                <video id="videoCam3" class="video-js video-cam3" width="400" poster="/thumbnails/cam3.png" controls>
-                    <source src="http://147.229.147.107/hls/cam3.m3u8" >
-                </video>
-            </div>
-            <div id="videoPlayers" class="col-md-6 col-xs-12">
-                <video id="videoCam4" class="video-js video-cam4" width="400" poster="/thumbnails/cam4.png" controls>
-                    <source src="http://147.229.147.107/hls/cam4.m3u8" >
-                </video> 
-            </div>
-        </div>
-    </div>-->
 
+    <!-- Modal window -->
     <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
@@ -63,6 +51,8 @@
         </div>
     </div>
 
+    <!-- footer -->
+    <footer><p>Author: Petr Čírtek</p><p>Project: MDS feec but</p></footer>
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -71,7 +61,7 @@
     <!-- Video.js JS -->
     <script src="https://vjs.zencdn.net/7.14.3/video.js"></script>
 
-    <!-- Custom JS -->
+    <!-- Mine JS -->
     <script src="script.js"></script>
 
 </body>
