@@ -95,6 +95,8 @@ function openModal(player, sources) {
     // lable with url
     const urlLabel = document.getElementById("modalURL")
     urlLabel.innerHTML = 'Video source: ' + auto
+    const bestQualityLabel = document.getElementById("modalBestQuality")
+    bestQualityLabel.innerHTML = "Best quality source: " + high
 
     // set modal title
     modalTitle.textContent = `Location: ${sources.location}, Country: ${sources.country}`;
