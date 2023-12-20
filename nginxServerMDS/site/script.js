@@ -16,39 +16,63 @@ async function fetchCameraInfo() {
 }
 
 function createVideoPlayers(videoSources) {
-    const videoPlayersContainer = document.getElementById('videoPlayers');
+    var videoPlayersContainer = document.getElementById('videoPlayersGarbF');
+    
+    for (let id = 0; id < Object.keys(videoSources).length; id++) {
 
-    // loop through each camera in the JSON data to create a video
-    Object.keys(videoSources).forEach(cam => {
-        const sources = videoSources[cam];
+        switch (id) {
+            case 0:
+                videoPlayersContainer = document.getElementById('videoPlayersGarbF');
+                break;
+            case 1:
+                videoPlayersContainer = document.getElementById('videoPlayersGarbB');
+                break;
+            case 2:
+                videoPlayersContainer = document.getElementById('videoPlayersAquaL');
+                break;
+            case 3:
+                videoPlayersContainer = document.getElementById('videoPlayersAquaR');
+                break;
+        }
 
-        //div to show in grid
-        const columnDiv = document.createElement('div');
-        columnDiv.className = 'col-md-6 col-sm-12 col-xl-3 divider';
+        console.log(Object.keys(videoSources)[id])
 
-        // setting video element
-        const video = document.createElement('video');
-        video.id = cam;
-        video.className = 'video-js ' + cam + ' video';
-        video.width = 400;
-        video.controls = false;
-        video.poster = sources.thumbnail;
+        addCam(videoSources[Object.keys(videoSources)[id]],videoPlayersContainer,Object.keys(videoSources)[id]);
+    }
 
-        // setting source element
-        const source = document.createElement('source');
-        source.src = sources.stream_url;
-        // add all to the page
-        video.appendChild(source);
-        columnDiv.appendChild(video)
-        videoPlayersContainer.appendChild(columnDiv);
-        // create player
-        const player = videojs(video.id, {muted: true});
-        const playerElement = player.el()
+    videoPlayersContainer = document.getElementById('videoPlayersAqua');
+    
+}
 
-        // add hover effect to start playing on hover
-        playOnHover(playerElement, player, sources);
+function addCam(source,videoPlayersContainer,id){
+
+    //div to show in grid
+    const columnDiv = document.createElement('div');
+    columnDiv.className = 'col-sm-12 divider';
+
+    // setting video element
+    const video = document.createElement('video');
+    video.id = id;
+    video.className = 'video-js ' + id + ' video';
+    video.width = 400;
+    video.controls = false;
+    video.poster = source.thumbnail;
+
+    // setting source element
+    const sourceDiv = document.createElement('source');
+    sourceDiv.src = source.stream_url;
+    // add all to the page
+    video.appendChild(sourceDiv);
+    columnDiv.appendChild(video)
+    videoPlayersContainer.appendChild(columnDiv);
+    // create player
+    console.log(video)
+    const player = videojs(video.id, {muted: true});
+    const playerElement = player.el()
+
+    // add hover effect to start playing on hover
+    playOnHover(playerElement, player, source);
         
-    });
 }
 
 // add effects to the videos
@@ -66,6 +90,7 @@ const playOnHover = (videoElement, player, cameraInfo) => {
     });
     // open modal when clicked
     videoElement.addEventListener('click', () => {
+        console.log(cameraInfo)
         openModal(player, cameraInfo);
     });
 };
@@ -87,7 +112,6 @@ function openModal(player, sources) {
 
     // create sub streams for quality buttons
     const auto = sources.stream_url
-    console.log(auto);
     const low = auto.replace(".m3u8", "_low.m3u8");
     const mid = auto.replace(".m3u8", "_mid.m3u8");
     const high = auto.replace(".m3u8", "_high.m3u8");
@@ -155,4 +179,3 @@ function changeQuality(player, source, urlLabel) {
     player.src({src: source });
     player.play();
 }
-
