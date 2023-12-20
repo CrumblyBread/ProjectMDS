@@ -3,31 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Player Site</title>
+    <title>Garbage and Water Site</title>
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <!-- Video.js CSS -->
     <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet">
 
-    <!-- Mine CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- header -->
-    <div class="header">
-        <div class="image">
-            <img src="logos/YouTube.png">
+    <div class="halfer">
+        <div class="header">
+            <H1 style="color: darkolivegreen;">Garbage Time</H1>
         </div>
-        <H1>TvojeTrubka</H1>
+        
+        <div class="content" id="garb">
+            <div class="container mt-5">
+                <div class="row" id="videoPlayersGarbF">
+                </div>
+            </div>
+            <img src="nginxServerMDS/site/pics/Truck.png" style="width: 40vw;">
+            <div class="container mt-5">
+                <div class="row" id="videoPlayersGarbB">
+                </div>
+            </div>
+        </div>
     </div>
-    <hr class="line">
-    
-    <!-- videos -->
-    <div class="content">
-        <div class="container mt-5">
-            <div class="row" id="videoPlayers">
+
+    <div class="halfer">
+        <div class="header">
+            <H1 style="color: aqua;">Aqua Time</H1>
+        </div>
+        
+        <div class="content" id="aqua">
+            <div class="container mt-5">
+                <div class="row" id="videoPlayersAquaL">
+                </div>
+            </div>
+            <img src="nginxServerMDS/site/pics/Fish.png" style="width: 40vw;">
+            <div class="container mt-5">
+                <div class="row" id="videoPlayersAquaR">
+                </div>
             </div>
         </div>
     </div>
@@ -52,17 +68,13 @@
         </div>
     </div>
 
-    <!-- footer -->
-    <footer><p>Author: Petr Čírtek</p><p>Project: MDS feec but</p></footer>
-    <!-- Bootstrap JS and Popper.js -->
+    <footer><p style="flex-grow: 1">Authoři: Branislav Kadlec, Matúš Maťaš, Julie Tydláčková</p><div style="flex-grow: 2"></div><p style="flex-grow: 1"></p></footer>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <!-- Video.js JS -->
     <script src="https://vjs.zencdn.net/7.14.3/video.js"></script>
 
-    <!-- Mine JS -->
     <script src="script.js"></script>
 
 </body>

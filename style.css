@@ -1,31 +1,25 @@
 body {
-    background-color: #f8f9fa;
+    background-color: #353535;
 
     margin-left: 20px;
     margin-right: 20px;
-    height: 100vh;
+    height: 96vh;
 }
 
 
 .header {
     display: flex;
     align-items: center; 
-    padding: 10px;
 }
 
-
-.header .image img {
-    width: 100px; 
-    height: auto; 
-    margin-right: 10px; 
+.halfer{
+    height: 50%;
 }
-
 
 .header h1 {
     font-family: 'Comic Sans MS', cursive;
     font-size: 36px;
     font-weight: 800;
-    margin: 0;
 }
 
 .line {
@@ -33,33 +27,37 @@ body {
     border-radius: 5px;
 }
 .content {
-    margin-top: -10px;
-    padding-top: 10px;
-    border-radius: 10px;
-    height: 90vh;
-    background-color: magenta;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height:80%;
 }
 
 .container {
-    max-width: 2000px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .row {
-    margin: -5px;
-    background-color: blueviolet;
+    background-color: #353535;
     border: 2px solid black;
     border-radius: 20px;
 }
 
+#garb{
+    background-color: darkolivegreen;
+}
+
+#aqua{
+    background-color: aqua;
+}
+
 .col-md-6 {
-    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     border-radius: 20px;
 }
 
@@ -102,10 +100,12 @@ video {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
-    padding: 10px;
+    text-align: center;
+    background-color: #313131;
+    color: white;
+    height: 4vh;
 }
 
 footer p {
