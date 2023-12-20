@@ -24,4 +24,6 @@ This project is licensed under the GNU Public License. Feel free to use, modify,
 
 # Acknowledgments
 Thanks to the Nginx team for providing a robust web server.
-Special thanks to garbage truck and aquarium enthusiasts for the inspiring content!
+Special thanks to the brilliant minds behind American infrastructure design for their unparalleled creativity in making every intersection look like a unique work of art. I never knew I could experience such excitement at every crossroads.
+
+And let's not forget our dear aquarium enthusiasts who have generously flooded the internet with an abundance of fish videos. Your dedication to showcasing the thrilling world of underwater life has forever changed the way we procrastinate. Who needs gripping documentaries or high-quality entertainment when we can watch fish swimming in circles for hours on end? Your contributions to our collective enlightenment are simply fin-tastic!
