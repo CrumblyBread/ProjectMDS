@@ -702,3 +702,76 @@
 2023/11/20 12:28:03 [error] 8808#10608: *15 hls: force fragment split: 50.008 sec, , client: 127.0.0.1, server: 0.0.0.0:1935
 2023/12/06 23:41:21 [emerg] 24016#8140: unknown directive "replace_header" in C:\Users\janha\Documents\MDS\nginxServerMDS/conf/nginx.conf:59
 2023/12/06 23:43:56 [emerg] 21540#22452: CreateFile() "C:/etc/nginx/mime.types" failed (3: The system cannot find the path specified) in C:\Users\janha\Documents\MDS\nginxServerMDS/conf/nginx.conf:10
+2023/12/20 19:45:10 [emerg] 10992#19928: CreateDirectory() "C:\Users\Gamer Edition\Desktop\School\VUT FEKT\projects\ProjectMDS\nginxServerMDS/temp/client_body_temp" failed (3: The system cannot find the path specified)
+2023/12/20 19:46:46 [emerg] 3680#19120: CreateDirectory() "C:\Users\Gamer Edition\Desktop\School\VUT FEKT\projects\ProjectMDS\nginxServerMDS/temp/client_body_temp" failed (3: The system cannot find the path specified)
+2023/12/20 19:51:07 [notice] 2384#20316: signal process started
+2023/12/20 19:51:07 [error] 2384#20316: CreateFile() "C:\Users\Gamer Edition\Desktop\School\VUT FEKT\projects\ProjectMDS\nginxServerMDS/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2023/12/20 20:00:38 [notice] 6316#16228: signal process started
+2023/12/20 20:00:38 [error] 6316#16228: CreateFile() "C:\Users\Gamer Edition\Desktop\School\VUT FEKT\projects\ProjectMDS\nginxServerMDS/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2023/12/20 20:02:43 [notice] 15376#19884: signal process started
+2023/12/20 20:02:43 [error] 15376#19884: CreateFile() "C:\Users\Gamer Edition\Desktop\School\VUT FEKT\projects\ProjectMDS\nginxServerMDS/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2023/12/20 20:38:24 [notice] 16252#19060: signal process started
+2023/12/20 20:38:24 [error] 16252#19060: CreateFile() "C:\Users\Gamer Edition\Desktop\School\VUT FEKT\projects\ProjectMDS\nginxServerMDS/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2023/12/20 20:57:54 [notice] 692#11672: signal process started
+2023/12/20 20:57:54 [error] 692#11672: CreateFile() "C:\Users\Gamer Edition\Desktop\School\VUT FEKT\projects\ProjectMDS\nginxServerMDS/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2023/12/20 21:10:22 [notice] 16896#13128: signal process started
+2023/12/20 21:10:22 [error] 16896#13128: CreateFile() "C:\Users\Gamer Edition\Desktop\School\VUT FEKT\projects\ProjectMDS\nginxServerMDS/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2023/12/20 21:20:23 [error] 10380#17052: *29 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:23:56 [error] 10380#17052: *51 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:23:58 [error] 10380#17052: *52 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:24:04 [error] 10380#17052: *56 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:30:03 [notice] 21028#21032: signal process started
+2023/12/20 21:43:07 [notice] 21412#16864: signal process started
+2023/12/20 21:43:07 [error] 21412#16864: CreateFile() "C:\Users\Gamer Edition\Desktop\School\VUT FEKT\projects\ProjectMDS\nginxServerMDS/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2023/12/20 21:55:06 [error] 12468#20160: *29 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:07 [error] 12468#20160: *30 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:08 [error] 12468#20160: *31 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:09 [error] 12468#20160: *32 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:11 [error] 12468#20160: *33 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:11 [error] 12468#20160: *34 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:13 [error] 12468#20160: *35 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:14 [error] 12468#20160: *36 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:15 [error] 12468#20160: *37 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:18 [error] 12468#20160: *38 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:18 [error] 12468#20160: *39 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:19 [error] 12468#20160: *40 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:20 [error] 12468#20160: *41 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:21 [error] 12468#20160: *42 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:23 [error] 12468#20160: *43 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:24 [error] 12468#20160: *44 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:25 [error] 12468#20160: *45 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:27 [error] 12468#20160: *46 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:28 [error] 12468#20160: *47 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:28 [error] 12468#20160: *48 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:30 [error] 12468#20160: *49 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:30 [error] 12468#20160: *50 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:31 [error] 12468#20160: *51 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:32 [error] 12468#20160: *52 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:33 [error] 12468#20160: *53 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:35 [error] 12468#20160: *54 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:36 [error] 12468#20160: *55 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:37 [error] 12468#20160: *56 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:38 [error] 12468#20160: *57 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:39 [error] 12468#20160: *58 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:41 [error] 12468#20160: *59 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:44 [error] 12468#20160: *60 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:45 [error] 12468#20160: *61 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:47 [error] 12468#20160: *62 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:48 [error] 12468#20160: *63 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:49 [error] 12468#20160: *64 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:51 [error] 12468#20160: *65 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:53 [error] 12468#20160: *66 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:54 [error] 12468#20160: *67 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 21:55:56 [error] 12468#20160: *68 live: already publishing, client: 127.0.0.1, server: 0.0.0.0:1935
+2023/12/20 22:04:46 [notice] 12940#19324: signal process started
+2023/12/20 22:05:27 [notice] 868#19532: signal process started
+2023/12/20 22:05:34 [notice] 18364#2592: signal process started
+2023/12/20 22:05:34 [error] 18364#2592: CreateFile() "C:\Users\Gamer Edition\Desktop\School\VUT FEKT\projects\ProjectMDS\nginxServerMDS/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2023/12/20 22:30:39 [notice] 16052#14528: signal process started
+2023/12/20 22:31:59 [notice] 21880#7716: signal process started
+2023/12/20 22:31:59 [error] 21880#7716: CreateFile() "C:\Users\Gamer Edition\Desktop\School\VUT FEKT\projects\ProjectMDS\nginxServerMDS/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2023/12/20 22:32:49 [notice] 4572#15536: signal process started
+2023/12/20 22:32:49 [error] 4572#15536: CreateFile() "C:\Users\Gamer Edition\Desktop\School\VUT FEKT\projects\ProjectMDS\nginxServerMDS/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2023/12/20 22:38:24 [notice] 16676#19292: signal process started
+2023/12/20 22:38:30 [notice] 2128#13560: signal process started
+2023/12/20 22:38:30 [error] 2128#13560: OpenEvent("Global\ngx_stop_20348") failed (2: The system cannot find the file specified)

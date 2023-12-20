@@ -112,9 +112,9 @@ function openModal(player, sources) {
 
     // create sub streams for quality buttons
     const auto = sources.stream_url
-    const low = auto.replace(".m3u8", "_low.m3u8");
-    const mid = auto.replace(".m3u8", "_mid.m3u8");
-    const high = auto.replace(".m3u8", "_high.m3u8");
+    const low = auto.replace(".m3u8", "_360.m3u8");
+    const mid = auto.replace(".m3u8", "_480.m3u8");
+    const high = auto.replace(".m3u8", "_720.m3u8");
 
     // lable with url
     const urlLabel = document.getElementById("modalURL")
