@@ -8,22 +8,22 @@
     },
     "cam2": {
         "camera_id": 2,
-        "location": "Intersection looking exactly the same no. 998846",
-        "country": "GODS DRUNKEST DRIVERS",
+        "location": "Troy",
+        "country": "United States",
         "stream_url": "http://127.0.0.1/hls/stream2.m3u8",
         "thumbnail": "/thumbnails/cam2.png"
     },
     "cam3": {
         "camera_id": 3,
-        "location": "fisheeeeee",
-        "country": "FISH",
+        "location": "Norfolk",
+        "country": "United States",
         "stream_url": "http://127.0.0.1/hls/stream3.m3u8",
         "thumbnail": "/thumbnails/cam3.png"
     },
     "cam4": {
         "camera_id": 4,
-        "location": "glugluglug",
-        "country": "restos potokos",
+        "location": "Medford",
+        "country": "United States",
         "stream_url": "http://127.0.0.1/hls/stream4.m3u8",
         "thumbnail": "/thumbnails/cam4.png"
     }    
