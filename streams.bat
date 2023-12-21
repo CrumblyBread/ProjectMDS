@@ -1,7 +1,7 @@
-set video1="http://86.44.41.160/mjpg/video.mjpg"
-set video2="http://185.14.139.118:81/mjpg/video.mjpg"
-set video3="http://85.158.74.20/mjpg/video.mjpg"
-set video4="http://92.110.185.114:8080/mjpg/video.mjpg"
+set video1="http://201.174.12.243:1024/mjpg/video.mjpg"
+set video2="http://142.154.137.29/mjpg/video.mjpg"
+set video3="http://216.54.27.7/mjpg/video.mjpg"
+set video4="http://97.90.105.122/mjpg/video.mjpg"
 
 set target1="rtmp://localhost/hls/stream1_"
 set target2="rtmp://localhost/hls/stream2_"
