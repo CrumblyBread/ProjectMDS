@@ -25,7 +25,7 @@ C:\yourfolder\nginxServerMDS> .\NGINX.exe
 
 5. You need to run streams-all to start streaming
 ```shell
-C:\yourfolde\nginxServerMDSr> .\streams-all
+C:\yourfolder\nginxServerMDSr> .\streams-all
 ```
 
 6. This will pop up multiple command lines so don't be scared
