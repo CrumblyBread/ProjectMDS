@@ -20,12 +20,12 @@ Only tested for Windows, sorry Linux users.
  
 5. To run Nginx just simply
 ```shell
-C:\yourfolder"> .\NGINX.exe
+C:\yourfolder> .\NGINX.exe
 ```
 
 5. You need to run streams-all to start streaming
 ```shell
-C:\yourfolder"> .\streams-all
+C:\yourfolder> .\streams-all
 ```
 
 6. This will pop up multiple command lines so don't be scared
