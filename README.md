@@ -1,4 +1,4 @@
-# Garbage Truck and Aquarium Livestream Website
+# Traffic and Aquarium Livestream Website
 
 This project is a simple website that utilizes Nginx for hosting livestreams featuring content about intersection and aquariums. The livestreams are delivered using the HTTP Live Streaming (HLS) protocol, offering multiple quality options for viewers.
 
@@ -31,10 +31,10 @@ C:\yourfolder> .\streams-all
 6. This will pop up multiple command lines so don't be scared
 
    
-# Access the Livestream Website:
+# Website
 The server runs on localhost, so just type `127.0.0.1` into your browser and you should start seeing the streams. You can check your streams in `127.0.0.1/stats` and `127.0.0.1/hls`.
 
-# Contributing
+# Contributing
 Contributions are not welcome! If you have improvements or additional features you'd like to add, please don't submit a pull request. No one will work on this project anymore.
 
 # License
