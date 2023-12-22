@@ -44,3 +44,8 @@ This project is licensed under the GNU Public License. Feel free to use, modify,
 Thanks to the Nginx team for providing a robust web server.
 
 Special thanks to the brilliant minds behind American infrastructure design for their unparalleled creativity in making every intersection look like a unique work of art. I never knew I could experience such excitement at every crossroads.
+
+# Authors
+- Branislav Kadlec
+- Matus Matas
+- Julie Tydlackova
