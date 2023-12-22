@@ -16,7 +16,7 @@ Only tested for Windows, sorry Linux users.
  ```shell
 > cd "C:\yourfolder"
 ```
-3. You will need to allow Nginx to create folders or simply just create folder temp\client_body_temp
+3. You will need to allow Nginx create folders or simply just create folder temp\client_body_temp
  
 5. To run Nginx just simply
 ```shell
