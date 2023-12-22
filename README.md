@@ -11,19 +11,23 @@ This project is a simple website that utilizes Nginx for hosting livestreams fea
 Only tested for Windows, sorry Linux users.
 
 1. Clone this repository or simply download the zip file
-2. Switch to the folder
+   
+3. Switch to the folder
  ```shell
 > cd "C:\yourfolder"
 ```
 3. You will need to allow Nginx to create folders or simply just create folder temp\client_body_temp
-4. To run Nginx just simply
+ 
+5. To run Nginx just simply
 ```shell
 C:\yourfolder"> .\NGINX.exe
 ```
+
 5. You need to run streams-all to start streaming
 ```shell
 C:\yourfolder"> .\streams-all
 ```
+
 6. This will pop up multiple command lines so don't be scared
 
    
