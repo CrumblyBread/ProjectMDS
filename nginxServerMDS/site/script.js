@@ -1,9 +1,8 @@
-//start on load
 document.addEventListener('DOMContentLoaded', async function () {
     const videoSources = await fetchCameraInfo();
     createVideoPlayers(videoSources);
 });
-// get data from json file
+
 async function fetchCameraInfo() {
     try {
         const response = await fetch('cams.json');
@@ -46,11 +45,9 @@ function createVideoPlayers(videoSources) {
 
 function addCam(source,videoPlayersContainer,id){
 
-    //div to show in grid
     const columnDiv = document.createElement('div');
     columnDiv.className = 'col-sm-12 divider';
 
-    // setting video element
     const video = document.createElement('video');
     video.id = id;
     video.className = 'video-js ' + id + ' video';
@@ -58,37 +55,29 @@ function addCam(source,videoPlayersContainer,id){
     video.controls = false;
     video.poster = source.thumbnail;
 
-    // setting source element
     const sourceDiv = document.createElement('source');
     sourceDiv.src = source.stream_url;
-    // add all to the page
     video.appendChild(sourceDiv);
     columnDiv.appendChild(video)
     videoPlayersContainer.appendChild(columnDiv);
-    // create player
     console.log(video)
     const player = videojs(video.id, {muted: true});
     const playerElement = player.el()
 
-    // add hover effect to start playing on hover
     playOnHover(playerElement, player, source);
         
 }
 
-// add effects to the videos
 const playOnHover = (videoElement, player, cameraInfo) => {
-    //play on hover
     videoElement.addEventListener('mouseover', () => {
         player.play().catch(error => {
             console.error('Play error:', error.message);
         });
     });
-    // stop playing when no hover
     videoElement.addEventListener('mouseout', () => {
         player.pause();
         videoElement.poster = cameraInfo.thumbnail;
     });
-    // open modal when clicked
     videoElement.addEventListener('click', () => {
         console.log(cameraInfo)
         openModal(player, cameraInfo);
@@ -99,7 +88,6 @@ const playOnHover = (videoElement, player, cameraInfo) => {
 function openModal(player, sources) {
 
 
-    // get modal elements
     const videoModal = document.getElementById('videoModal');
     const modalVideo = document.getElementById('modalVideo');
     const qualityOptions = document.getElementById('qualityOptions');
@@ -107,35 +95,28 @@ function openModal(player, sources) {
     
     const modalPlayer = videojs('modalVideo')
 
-    // set video sources for the modal
     modalVideo.innerHTML = '';
 
-    // create sub streams for quality buttons
     const auto = sources.stream_url
-    const low = auto.replace(".m3u8", "_360.m3u8");
-    const mid = auto.replace(".m3u8", "_480.m3u8");
-    const high = auto.replace(".m3u8", "_720.m3u8");
+    const low = auto.replace(".m3u8", "_low.m3u8");
+    const mid = auto.replace(".m3u8", "_mid.m3u8");
+    const high = auto.replace(".m3u8", "_high.m3u8");
 
-    // lable with url
     const urlLabel = document.getElementById("modalURL")
     urlLabel.innerHTML = 'Video source: ' + auto
     const bestQualityLabel = document.getElementById("modalBestQuality")
     bestQualityLabel.innerHTML = "Best quality source: " + high
 
-    // set modal title
     modalTitle.textContent = `Location: ${sources.location}, Country: ${sources.country}`;
 
-    // show modal
     $(videoModal).modal('show');
 
-    // initialize Video.js player after the modal is shown
     $(videoModal).on('shown.bs.modal',async function () {
         qualityOptions.innerHTML = '';
         modalPlayer.width = 1000;
         modalPlayer.src({ src: auto, muted: false });
         await modalPlayer.play();
 
-        // creation of change quality buttons
         const qualityAutoButton = createQualityButton('Auto', modalPlayer, auto, urlLabel);
         qualityOptions.appendChild(qualityAutoButton);
 
@@ -148,7 +129,6 @@ function openModal(player, sources) {
         const qualityHighButton = createQualityButton('High', modalPlayer, high, urlLabel);
         qualityOptions.appendChild(qualityHighButton);
     });
-    // delete player and create new one for fetching data on hide modal
     $(videoModal).on('hidden.bs.modal',async function  () {
         modalPlayer.dispose();
         const modalBody = document.getElementById('modalBody');
@@ -161,7 +141,6 @@ function openModal(player, sources) {
     });
 }
 
-// create buttons and adding functions to it
 function createQualityButton(text, player, source, urlLabel) {
     const qualityButton = document.createElement('button');
     qualityButton.className = 'btn btn-outline-primary';
